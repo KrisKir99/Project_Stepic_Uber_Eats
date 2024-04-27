@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uber Eats</title>
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="https://unpkg.com/flexboxgrid2@7.2.1/flexboxgrid2.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-flex">
+            <div><img class="black-logo" src="images\black-logo.svg"></div>
+            <div class="btn_and_basket"><input id="btn-to-come-in" type="submit" value="Войти">
+                <a href="#" class="basket"><img src="images\basket.png"></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="page_pushkin" class="background-img">
+            <div class="banner_container">
+                <div class="col-xs-12 col-md-7 col-lg-5">
+                    <div class="pushkin-grid">
+                        <div id="main-name">Трактир &laquo;Пушкин&raquo;</div>
+                        <div id="europe">&#8381&#8381&#8381 &#x2022; Европейская</div>
+                        <div id="delivery-time-europe">40 - 50 мин</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="menu">
+            <nav class="menu-nav">
+                <ul>
+                    <li class="menu-li"><a href="#snacks">Закуски</a></li>
+                    <li class="menu-li"><a href="#">Салаты</a></li>
+                    <li class="menu-li"><a href="#">Супы</a></li>
+                    <li class="menu-li"><a href="#">Горячие блюда</a></li>
+                    <li class="menu-li"><a href="#">Гарниры</a></li>
+                    <li class="menu-li"><a href="#">Десерты</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="block-snacks">
+            <p id="snacks" class="snacks-p">Закуски</p>
+            <hr class="hr-snacks">
+            <div class="container">
+                <div class="row no-gutters">
+                    <div class="col-xs-12 col-md-12 col-lg-6">
+                        <div class="block_dish">
+                            <div>
+                                <p class="name-dish">Сельдь на бородинском хлебе<br><span class="add-info">С яйцом и
+                                        огурцом</span></p>
+                                <p class="price">240 &#8381;</p>
+                            </div>
+                            <div><img src="images\menu1.png"></div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-12 col-lg-6">
+                        <div class="block_dish">
+                            <div>
+                                <p class="name-dish">Соленья ассорти</p>
+                                <p class="price">320 &#8381;</p>
+                            </div>
+                            <div><img src="images\menu2.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-12 col-lg-6">
+                        <div class="block_dish">
+                            <div>
+                                <p class="name-dish">Грибы маринованные</p>
+                                <p class="price">300 &#8381;</p>
+                            </div>
+                            <div><img src="images\menu3.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-12 col-lg-6">
+                        <div class="block_dish">
+                            <div>
+                                <p class="name-dish">Сало домашнее с горчицей</p>
+                                <p class="price">320 &#8381;</p>
+                            </div>
+                            <div><img src="images\menu4.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-12 col-lg-6">
+                        <div class="block_dish">
+                            <div>
+                                <p class="name-dish">Малосольная семга</p>
+                                <p class="price">390 &#8381;</p>
+                            </div>
+                            <div><img src="images\menu5.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-12 col-lg-6">
+                        <div class="block_dish">
+                            <div>
+                                <p class="name-dish">Язык говяжий с хреном</p>
+                                <p class="price">350 &#8381;</p>
+                            </div>
+                            <div><img src="images\menu6.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <section class="footer-uber">
+            <img class="white-logo" src="images\white-logo.svg" alt="logo">
+            <hr>
+            <div class="footer_grid">
+                <div class="one-block-footer">
+                    <form>
+                        <div class="select-style">
+                            <img class="img-world" src="images\world.svg" alt="world">
+                            <select class="select-lang" name="lang" id="lang">
+                                <option value="russian" selected>Русский</option>
+                                <option value="english">English</option>
+                                <option value="china">中文</option>
+                            </select>
+                        </div>
+                    </form>
+                    <p><span class="span_footer"># </span>UberEats</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/" target="_blank"><i
+                                class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="two-block-footer">
+                    <div><a class="contact-links" href="" target="_self">Об UberEats</a></div>
+                    <div><a class="contact-links" href="" target="_self">Станьте партнёром по доставке</a></div>
+                    <div><a class="contact-links" href="" target="_self">Станьте партнёром-ресторанам</a></div>
+                </div>
+                <div class="three-block-footer">
+                    <div><a class="contact-links" href="" target="_self">Все города</a></div>
+                    <div><a class="contact-links" href="" target="_self">Цены</a></div>
+                    <div><a class="contact-links" href="" target="_self">Помощь</a></div>
+                    <div><a class="contact-links" href="" target="_self">FAQs</a></div>
+                </div>
+            </div>
+            <hr>
+            <div class="download">
+                <a class="btn_downland app_store" href="" target="_blank"><img src="images\img_app_store.png"
+                        alt="App Store"></a>
+                <a class="btn_downland play_market" href="" target="_blank"><img src="images\img_google_play.png"
+                        alt="Google Play"></a>
+            </div>
+            <hr>
+            <div class="last_block">
+                <p>&#xA9; 2017 Uber Technologies Inc.</p>
+                <a class="info-footer" href="#">
+                    <p>Обработка персональных данных</p>
+                </a>
+                <a class="info-footer" href="#">
+                    <p>Пользовательское соглашение</p>
+                </a>
+            </div>
+        </section>
+    </footer>
+    <a class="btn-up" href="#" target="_self"><i class="fa-solid fa-arrow-up-long"></i></a>
+    <script src="https://kit.fontawesome.com/2aca7f7758.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

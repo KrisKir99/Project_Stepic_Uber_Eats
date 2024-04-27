@@ -1,0 +1,542 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-padding-top: 128px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    min-width: 320px;
+}
+
+/* HEADER */
+
+header {
+    width: 100%;
+    height: 72px;
+    z-index: 1;
+    box-shadow: 0 2px 7px rgb(151, 151, 151, 50%);
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+}
+
+.header-flex {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 940px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 0 8px;
+}
+
+.black-logo {
+    width: 119.23px;
+    height: 12.31px;
+}
+
+.btn_and_basket {
+    display: flex;
+    align-items: center;
+}
+
+#btn-to-come-in {
+    width: 78px;
+    height: 40px;
+    background-color: #fff;
+    border: 0;
+    border-radius: 2px;
+    box-shadow: inset 1px 1px #E0E0E0, inset -1px -1px #E0E0E0;
+    font-weight: bolder;
+    font-size: 13px;
+    transition: background-color 0.5s, transform 0.5s;
+}
+
+#btn-to-come-in:hover {
+    background-color: #eee8e8;
+}
+
+#btn-to-come-in:active {
+    transform: scale(85%);
+}
+
+a:hover,
+.info-footer p:hover {
+    color: #726f6f;
+}
+
+.basket {
+    padding-left: 27px;
+}
+
+@media (max-width: 320px) {
+    .basket img {
+        display: none;
+    }
+}
+
+/* BANNER Traktir Pushkin */
+
+.background-img {
+    background-image: url(images/tavern_Pushkin.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 72px;
+    height: 364px;
+}
+
+.banner_container {
+    width: 100%;
+    max-width: 956px;
+    margin: 0 auto;
+}
+
+.pushkin-grid {
+    position: relative;
+    top: 80px;
+    height: 204px;
+    background-color: #fff;
+    border-radius: 2px;
+    color: #1D1D1D;
+    box-shadow: 0 0 7px rgb(151, 151, 151, 50%);
+    display: grid;
+    grid-template-columns: repeat (auto-fill, minmax(308, 1fr));
+    row-gap: 54px;
+    justify-content: center;
+}
+
+#main-name {
+    grid-column: span 2;
+    font-size: 36px;
+    height: 42px;
+    margin-top: 38px;
+}
+
+#europe {
+    font-size: 14px;
+    width: 129px;
+    height: 32px;
+    padding-top: 9px;
+    margin-bottom: 38px;
+}
+
+#delivery-time-europe {
+    background-color: #262626;
+    color: #fff;
+    font-size: 13px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100px;
+    height: 32px;
+    margin-bottom: 38px;
+}
+
+@media (max-width: 991px) {
+    .pushkin-grid {
+        justify-content: start;
+        padding-left: 38px;
+    }
+}
+
+@media (max-width: 767px) {
+    .background-img {
+        height: 320px;
+    }
+
+    .pushkin-grid {
+        top: 180px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0;
+        padding-left: 0;
+    }
+
+    #main-name {
+        height: 28px;
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+
+    #europe {
+        height: 16px;
+        margin-bottom: 16px;
+    }
+
+    #delivery-time-europe {
+        height: 132px;
+        width: 98px;
+        margin-bottom: 24px;
+    }
+}
+
+/* MAIN MENU */
+
+.menu {
+    border-bottom: solid 1px rgb(117, 117, 117, .2);
+}
+
+.menu-nav {
+    max-width: 956px;
+    margin: 30px auto;
+}
+
+.menu-nav ul {
+    padding: 0 8px;
+}
+
+.menu-li {
+    display: inline;
+    padding-right: 40px;
+}
+
+.menu-li a {
+    text-decoration: none;
+    color: #626262;
+    font-size: 16px;
+}
+
+.menu-li a:hover {
+    color: #558f52;
+}
+
+.block-snacks {
+    width: 100%;
+    max-width: 956px;
+    margin: 0 auto 40px;
+}
+
+.snacks-p {
+    font-size: 22px;
+    line-height: 34px;
+    color: #1D1D1D;
+    padding: 56px 8px 32px;
+}
+
+.hr-snacks {
+    display: none;
+}
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+
+    >[class*="col-"] {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+.block_dish {
+    border: solid 1px rgb(117, 117, 117, .2);
+    margin: 8px 8px 49px;
+    transition: background-color 0.5s;
+    display: flex;
+    justify-content: space-between;
+}
+
+.block_dish:hover {
+    background-color: #eaf3ea;
+}
+
+.block_dish:active {
+    background-color: #b4c7b4;
+}
+
+.block_dish div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.block_dish div img {
+    height: 100%;
+    width: 170px;
+    overflow: cover;
+    margin-left: 18px;
+}
+
+.name-dish {
+    height: 49px;
+    padding-top: 16px;
+    padding-left: 16px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1D1D1D;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.price {
+    padding-bottom: 16px;
+    padding-left: 16px;
+    font-size: 15px;
+    line-height: 21px;
+    color: #1D1D1D;
+    font-weight: 550;
+}
+
+.add-info {
+    font-size: 13px;
+    color: #626262;
+    line-height: 21px;
+}
+
+@media (max-width: 991px) {
+    .block_dish div img {
+        width: 200px;
+    }
+}
+
+@media (max-width: 767px) {
+    .menu-nav {
+        display: none;
+    }
+
+    .snacks-p {
+        text-align: center;
+        padding-top: 112px;
+        padding-bottom: 0px;
+    }
+
+    .hr-snacks {
+        display: block;
+        width: 50px;
+        margin: 12px auto 43px;
+    }
+
+    .block_dish {
+        height: 102px;
+        margin-bottom: 16px;
+        border: none;
+        border-bottom: 1px solid rgba(117, 117, 117, 0.2);
+    }
+
+    .block_dish div img {
+        height: 102px;
+        width: 102px;
+    }
+
+    .name-dish {
+        font-size: 14px;
+    }
+
+    .name-dish,
+    .price {
+        padding-top: 0;
+        padding-left: 0;
+    }
+}
+
+@media (max-width:342px) {
+    .name-dish {
+        width: 178px;
+    }
+}
+
+/* FOOTER*/
+
+footer {
+    width: 100%;
+    background-color: #262626;
+    padding-top: 66px;
+}
+
+.footer-uber {
+    max-width: 956px;
+    margin: 0 auto;
+    padding: 0 8px 40px;
+}
+
+.white-logo {
+    width: 190.77px;
+    height: 19.69px;
+    margin-bottom: 40px;
+}
+
+.footer_grid,
+.last_block {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.select-style {
+    max-width: 227px;
+    min-width: 173px;
+    height: 40px;
+    background-color: #303030;
+    margin-top: 32px;
+    margin-bottom: 33px;
+    padding-left: 16px;
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+}
+
+.img-world {
+    width: 15.72px;
+    height: 15.72px;
+    margin-right: 10px;
+}
+
+.select-lang {
+    border: 0;
+    width: 180px;
+    height: 40px;
+    background-color: #303030;
+    color: #fff;
+    font-size: 13px;
+}
+
+footer p {
+    color: #fff;
+}
+
+.span_footer {
+    color: #49A144;
+}
+
+.one-block-footer p {
+    font-size: 16px;
+}
+
+.social-icons i {
+    width: 24px;
+    height: 24px;
+    color: #fff;
+    padding: 1px;
+    margin-top: 17px;
+}
+
+.contact-links {
+    font-size: 13px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+
+.two-block-footer,
+.three-block-footer {
+    margin-top: 39px;
+}
+
+.two-block-footer>div,
+.three-block-footer>div {
+    margin-bottom: 23px;
+}
+
+.download {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.btn_downland:hover {
+    transition: transform 0.5s;
+    transform: scale(102%);
+}
+
+.app_store {
+    width: 120.66px;
+    height: 40px;
+}
+
+.play_market {
+    width: 135px;
+    height: 40px;
+}
+
+.last_block {
+    margin-top: 40px;
+}
+
+.last_block p {
+    font-size: 11px;
+}
+
+.info-footer {
+    text-decoration: none;
+}
+
+.btn-up {
+    position: fixed;
+    bottom: 4%;
+    right: 2%;
+    color: #fff;
+    width: 80px;
+    height: 80px;
+    background-color: #57AD56;
+    border-radius: 2px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+@media (max-width: 767px) {
+    .footer_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .last_block {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-uber {
+        padding: 0 4px 40px 8px;
+    }
+
+    .two-block-footer {
+        margin-top: 0px;
+    }
+
+    .three-block-footer {
+        margin-top: -39px;
+        margin-bottom: 40px;
+    }
+
+    .two-block-footer>div,
+    .three-block-footer>div {
+        margin: 23px 0;
+    }
+
+    .download {
+        margin-top: 24px;
+        margin-bottom: 24px;
+        gap: 24px;
+    }
+
+    .app_store img {
+        width: 108.6px;
+        height: 36px;
+    }
+
+    .play_market img {
+        width: 124px;
+        height: 36px;
+    }
+
+    .btn-up {
+        width: 64px;
+        height: 64px;
+    }
+}
